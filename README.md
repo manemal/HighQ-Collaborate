@@ -63,7 +63,7 @@ See https://kb-collaborate.highq.com/advanced-tip_-displaying-external-content-i
 
 ### Methods
 - [forPeopleList](https://github.com/manemal/HighQ-Collaborate#forpeoplelist)
-- [getFavouriteFilesFromSite](https://github.com/manemal/HighQ-Collaborate#getFavouriteFilesFromSite) 
+- [getFavouriteFilesFromSite](https://github.com/manemal/HighQ-Collaborate#getfavouritefilesfromsite) 
 
 #### forPeopleList
 This is for use when you have People List's in your home page dashboard and you want to apply manual ordering.  Currently Collaborate only support displaying the generated list in alphabetical order.
