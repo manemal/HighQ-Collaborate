@@ -61,9 +61,11 @@ See https://kb-collaborate.highq.com/advanced-tip_-displaying-external-content-i
 1. Click the OK (green button) to save your changes, and click the tickbox to save the Home page back to Collaborate.
 1. :+1: That's it, click on the Home page link in the top main navigation and you should see the reordered list.
 
+___
 ### Methods
-- [forPeopleList](https://github.com/manemal/HighQ-Collaborate#forpeoplelist)
-- [getFavouriteFilesFromSite](https://github.com/manemal/HighQ-Collaborate#getfavouritefilesfromsite) 
+- [forPeopleList](#forpeoplelist)
+- [getFavouriteFilesList](#getfavouritefileslist) 
+___
 
 #### forPeopleList
 This is for use when you have People List's in your home page dashboard and you want to apply manual ordering.  Currently Collaborate only support displaying the generated list in alphabetical order.
@@ -139,13 +141,14 @@ ClientCustomisations.forPeopleList(131).using("name").reorderBy([
 ```
 ...TODO... 
 ```
+___
 
-#### getFavouriteFilesFromSite
+#### getFavouriteFilesList
 This will allow you to display a list of the user's Favourite Files in the Home page dashboard, for either the current site, or a provided site Id.
 
 ##### Usage
 ```javascript
-ClientCustomisations.getFavouriteFilesFromSite(@siteId).placeInto(@location);
+ClientCustomisations.getFavouriteFilesList().forSite(@siteId).placeInto(@location);
 ```
 
 Where
@@ -160,24 +163,24 @@ If you want the users favourite documents from all sites, and placed into the el
 > see [w3schools.com](https://www.w3schools.com/tags/att_id.asp) for what or how to use "id"
 
 ```javascript
-ClientCustomisations.getFavouriteFilesFromSite().placeInto("myList");
+ClientCustomisations.getFavouriteFilesList().forSite().placeInto("myList");
 ```
 
 If you want the users favourite documents from just site #42, and placed into the element with id "myList"
 
 ```javascript
-ClientCustomisations.getFavouriteFilesFromSite(42).placeInto("myList");
+ClientCustomisations.getFavouriteFilesList().forSite(42).placeInto("myList");
 ```
 
 If you want the users favourite documents from just site #42, and placed into the element found at "#dashboard div.listContainer"
 
 ```javascript
-ClientCustomisations.getFavouriteFilesFromSite(42).placeInto("#dashboard div.listContainer");
+ClientCustomisations.getFavouriteFilesList().forSite(42).placeInto("#dashboard div.listContainer");
 ```
 
 If you want the users favourite documents from just site #42, and placed into this element
 
 ```javascript
 var $element = $j("#myList");
-ClientCustomisations.getFavouriteFilesFromSite(42).placeInto($element);
+ClientCustomisations.getFavouriteFilesList().forSite(42).placeInto($element);
 ```
