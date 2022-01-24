@@ -3,8 +3,11 @@ Customisations for HighQ Collaborate product
 
 This javascript library is intended to help others with functionality related to the HighQ Collaborate SaaS platform.
 
-**NOTE:** This library is intended for version 4.1 onwards of HighQ Collaborate.
+---
 
+**NOTE:** This library is now deprecated due to changes in the Collaborate dashboard architecture and technologies used (5.x onwards).
+
+---
 
 ## ClientCustomisations
 This is a library that includes a set of helper functions when creating Home page dashboards for a site.
